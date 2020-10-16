@@ -1,0 +1,192 @@
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3 {
+    color: #ffffff;
+}
+
+span {
+    color: #e69c37;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: #333333;
+}
+
+nav {
+    margin-bottom: 125px;
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        .title {
+            margin-top: 20px;
+            h1 {
+                font-size: 4.0rem;
+                margin: 5px 0;
+                font-family: 'Signika Negative', sans-serif;
+                font-weight: 600;
+            }
+            h2 {
+                font-size: 2.2rem;
+                font-family: 'Signika Negative', sans-serif;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .menuBar ul {
+            display: flex;
+            margin-top: 50px;
+            li a {
+                font-family: 'Signika Negative', sans-serif;
+                color: white;
+                font-size: 2.0rem;
+                font-weight: 600;
+                margin: 15px;
+                position: relative;
+                transition: color 0.5s;
+            }
+            li a:hover {
+                color: #e69c37;
+            }
+        }
+    }
+}
+
+.skillsPage header {
+    .wrapper {
+        position: relative;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(153, 153, 153);
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+        margin-bottom: 120px;
+    }
+}
+.skillsPage header .wrapper::before {
+    content: "";
+    background: #e69c37;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    }
+
+.skillsPage main {
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(153, 153, 153);
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+        margin-bottom: 50px;
+    }
+    section {
+        position: relative;
+    }
+    section::before {
+        content: "";
+        background: #e69c37;
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        }
+}
+
+.ability {
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 40px;
+        li {
+            position: relative;
+            width: calc((100%/4) - 20px);
+            // border: 1px solid white;
+            margin: 0 10px 40px 10px;
+            h3 {
+                font-family: 'Signika Negative', sans-serif;
+                font-size: 2.0rem;
+                margin: 10px 0 15px 0;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        li div::before {
+            content: "";
+            background: linear-gradient(to top, #f7531d 0%,#f7531d 85%,grey 85% ,grey 100%);
+            width: 7px;
+            height: 100%;
+            position: absolute;
+            left: -20px;
+            border-radius: 25px;
+        }
+    }
+    .skills::before {
+        content: "Skills";
+        position: absolute;
+        color: grey;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 9.0rem;
+        font-weight: 600;
+        left: -200px;
+        transform: rotate(-90deg);
+        opacity: 0.2;
+    }
+}
+
+.education, .experience {
+    h3 {
+        margin: 0 0 50px 0;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 3.0rem;
+    }
+}
+
+
+
+
+
+
+
+
+

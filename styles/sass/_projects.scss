@@ -1,0 +1,89 @@
+.chooseProject {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(153, 153, 153);
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+        margin-bottom: 50px;
+    }
+    .projectText::before {
+        content: "";
+        background: #e69c37;
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        
+    }
+    .projectBar {
+        display: flex;
+        li a {
+            font-family: 'Signika Negative', sans-serif;
+            color: white;
+            font-size: 2.0rem;
+            font-weight: 600;
+            margin: 15px;
+            position: relative;
+            transition: color 0.5s;
+        }
+        li a:hover {
+            color: #e69c37;
+        }
+    }
+}
+
+.projects {
+    position: relative;
+    .projectList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        div {
+            margin: 0;
+            position: relative;
+        }
+        li {
+            width: calc((100%/3) - 20px);
+            margin: 10px 10px 20px 10px;
+        }
+        .overlay {
+            position: absolute; 
+            bottom: 0; 
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        li:hover .overlay {
+            opacity: 1;
+        }
+    }
+    .projectList::before {
+        content: "Projects";
+        position: absolute;
+        color: grey;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 9.0rem;
+        font-weight: 600;
+        left: -255px;
+        top: 190px;
+        transform: rotate(-90deg);
+        opacity: 0.2;
+    }
+}

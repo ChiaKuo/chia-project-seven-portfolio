@@ -1,0 +1,99 @@
+// .contactPage nav {
+//     margin-bottom: 100px;
+// }
+
+.contactPage header {
+    .wrapper {
+        position: relative;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(153, 153, 153);
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+        margin-bottom: 50px;
+    }
+}
+
+.contactPage header .wrapper::before {
+    content: "";
+    background: #e69c37;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    }
+
+.contactForm {
+    position: relative;
+    label {
+        display: none;
+    }
+    .name {
+        display: flex;
+        justify-content: space-between;
+        input[type=text] {
+            width: 49%;
+            background-color: #373737;
+            border: none;
+            color: #949494;
+            padding: 15px;
+            font-size: 2.0rem;
+            border-bottom: 3px solid rgb(153, 153, 153);
+            margin: 10px 0;
+        }
+    }
+    input[name=subject], input[name=email] {
+        width: 100%;
+        padding: 15px;
+        background-color: #373737;
+        color: #949494;
+        font-size: 2.0rem;
+        border: none;
+        margin: 10px 0;
+        border-bottom: 3px solid rgb(153, 153, 153);
+    }
+    textarea {
+        width: 100%;
+        padding: 15px;
+        background-color: #373737;
+        color: #949494;
+        border: none;
+        font-size: 2.0rem;
+        font-family: 'Open Sans', sans-serif;
+        margin: 10px 0;
+        border-bottom: 3px solid rgb(153, 153, 153);
+    }
+    .buttonContainer {
+        text-align: center;
+        button {
+            font-size: 2.0rem;
+            padding: 10px 15px;
+            width: 30%;
+            margin: 10px auto;
+            background-color: #333333;
+            border: 2px solid #e69c37;
+            color: #e69c37;
+        }
+    }
+}
+.contactForm::before {
+    content: "Contact Me";
+    position: absolute;
+    color: grey;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 9.0rem;
+    font-weight: 600;
+    left: 30px;
+    top: 160px;
+    transform: rotate(-90deg);
+    opacity: 0.2;
+}

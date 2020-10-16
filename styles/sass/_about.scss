@@ -1,0 +1,83 @@
+.aboutPage header {
+    position: relative;
+    margin-bottom: 120px;
+    .wrapper {
+        position: relative;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    h3 {
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 2.0rem;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 2.0rem;
+        margin: 10px 0 20px 0;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(153, 153, 153);
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+        margin-bottom: 20px;
+    }
+}
+
+.aboutPage header .wrapper::before {
+    content: "";
+    background: #e69c37;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    }
+
+main .services {
+    position: relative;
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    h3 {
+        margin: 40px 0 50px 0;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 3.0rem;
+    }
+}
+.services::before {
+    content: "";
+    background: #e69c37;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.aboutPage header::before {
+    content: "About Me";
+    position: absolute;
+    color: grey;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 9.0rem;
+    font-weight: 600;
+    left: 60px;
+    top: 250px;
+    transform: rotate(-90deg);
+    opacity: 0.2;
+}
